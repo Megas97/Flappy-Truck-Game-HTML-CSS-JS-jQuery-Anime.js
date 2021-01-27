@@ -1,0 +1,62 @@
+JSFiddle Link: https://jsfiddle.net/MegasXLR/han1otd9/2300/
+
+Anime.js: https://animejs.com/documentation/
+Get Dimensions Of HTML Objects Via JS: https://stackoverflow.com/questions/294250/how-do-i-retrieve-an-html-elements-actual-width-and-height
+Get Mouse Coordinates Relative To Parent: https://stackoverflow.com/questions/16154857/how-can-i-get-the-mouse-coordinates-relative-to-a-parent-div-javascript
+Set HTML Element Position Via JS: https://www.w3schools.com/JSREF/prop_style_position.asp
+Create Infinite Loop Via JS: https://stackoverflow.com/questions/13506852/infinite-timer-loop-with-javascript-no-setinterval
+JS's getElementById("id") Via jQuery: https://stackoverflow.com/questions/4069982/document-getelementbyid-vs-jquery
+Center HTML <button>: https://stackoverflow.com/questions/11799159/trying-to-align-html-button-at-the-center-of-the-my-page
+Check If Elements Are Overlapping: https://stackoverflow.com/questions/12066870/how-to-check-if-an-element-is-overlapping-other-elements
+Sum Values In JS: https://stackoverflow.com/questions/7053511/javascript-sum-values
+Pause setInterval: https://stackoverflow.com/questions/21277900/how-can-i-pause-setinterval-functions
+JS foreach: https://stackoverflow.com/questions/10964163/for-each-element-type-in-body
+Generate Random Number Between 2 Numbers Via JS: https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript
+JS zIndex: https://www.w3schools.com/jsref/prop_style_zindex.asp
+Position <div> Relative To Other <div>: https://stackoverflow.com/questions/11143273/position-div-relative-to-another-div
+Pause @keyframes Animation In The Middle: https://stackoverflow.com/questions/29880464/how-to-pause-during-middle-of-animation-transition/29880571
+Maintain Final State Of @keyframes Animation: https://stackoverflow.com/questions/12991164/maintaining-the-final-state-at-end-of-a-css3-animation
+CSS @keyframes Jumping Animation: https://stackoverflow.com/questions/37087745/css-jumping-animation
+CSS Animation Properties: https://www.w3schools.com/css/css3_animations.asp
+Differentiate Single And Double Clicks In JS: https://stackoverflow.com/questions/5497073/how-to-differentiate-single-click-event-and-double-click-event
+Prevent Text Selection After Double Click: https://stackoverflow.com/questions/880512/prevent-text-selection-after-double-click
+Continuously Rotate Object Via @keyframes: https://flaviocopes.com/rotate-image/
+Use setAttribute To Set Multiple Classes: https://stackoverflow.com/questions/6860213/how-can-i-use-setattribute-to-set-multiple-classes-on-an-element
+Trigger SVG animateTransform Animation On Button Click Via JS: https://stackoverflow.com/questions/31856890/svg-trigger-a-click-event-on-animatetransform-after-clicking-a-button
+SVG Animation Element Methods: https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimationElement
+Play/Pause SVG Animations Via JS: https://stackoverflow.com/questions/56365466/svg-pause-play-can-not-figure-out-why-this-isnt-working
+Play/Pause Anime.js Animations: https://animejs.com/documentation/#playPause
+animationPlayState Attribute Via JS: https://www.w3schools.com/jsref/prop_style_animationplaystate.asp
+Add Background Image To <div> Elements: https://stackoverflow.com/questions/20064596/adding-background-image-to-div-using-css
+Add Background Image To SVG Circle: https://stackoverflow.com/questions/11496734/add-a-background-image-png-to-a-svg-circle-shape#answer-24128191
+Fit Background Image To <div>: https://stackoverflow.com/questions/8200204/fit-background-image-to-div
+Sliding Background Image Effect: https://www.geeksforgeeks.org/how-to-create-a-sliding-background-effect-using-css/
+Darken Image Via CSS: https://www.dailysmarty.com/posts/how-to-darken-an-image-with-css
+CSS Animation Property: https://www.w3schools.com/cssref/css3_pr_animation.asp
+Rotate <div> Via JS: https://stackoverflow.com/questions/19126432/rotate-a-div-using-javascript
+Apply Multiple Transforms In CSS: https://stackoverflow.com/questions/10765755/how-to-apply-multiple-transforms-in-css
+Rain Effect Via CSS & JS: https://codepen.io/arickle/pen/XKjMZY
+Disable Horizontal Scrolling Via CSS: https://www.codegrepper.com/code-examples/delphi/disable+horizontal+scrolling+css
+Half Circle (Headlights & Taillights): https://stackoverflow.com/questions/22415651/half-circle-with-css-border-outline-only
+Snow Effect Via CSS & JS: https://www.cssscript.com/minimalist-falling-snow-effect-with-pure-javascript-snow-js/
+Play Sound Via JS: https://stackoverflow.com/questions/9419263/how-to-play-audio
+Stop Audio Via JS: https://stackoverflow.com/questions/14834520/html5-audio-stop-function
+Set Audio Volume Via JS: https://stackoverflow.com/questions/37115491/how-to-set-volume-of-audio-object
+Loop Audio Via JS: https://stackoverflow.com/questions/13610638/loop-audio-with-javascript
+Sound Effects (Use 'Inspect Element' To Find Direct Links For All Except 'Music'):
+Music: http://www.mikseri.net/artists/the-mod-archive-mixed-modules/decibelter-join-our-circle/516192/?displ_lang=en
+Engine: https://www.videvo.net/sound-effect/airport-truck-refuel-02/395518/
+Burnout: https://www.storyblocks.com/audio/stock/auto-tire-squeal-brakes-automobile-car-rg-ukr6hlpsk0wxxj75.html
+Rev Up: https://www.storyblocks.com/audio/stock/car-start-up-rev-engine-shut-off-hx3hbqt3lvsk0wxwz2g.html
+Jump: https://www.videvo.net/sound-effect/jeep-land-after-jump-n-pe857602/248699/
+Crash: https://www.videvo.net/sound-effect/jeep-crash-brief-pe1051811/248662/
+Bonus: https://www.videvo.net/sound-effect/switch-click-sounds-pe1090909/258075/
+Rain: https://www.soundjay.com/nature/sounds/rain-04.mp3
+Count Seconds: https://www.videvo.net/sound-effect/electronic-beep-13/418357/
+Time's Up: https://www.videvo.net/sound-effect/beeps-bonks-&amp;-boinks-01/404042/
+Checkbox Inside <button>: https://stackoverflow.com/questions/11045867/checkbox-inside-button
+Check If Checkbox Is Selected Via JS: https://stackoverflow.com/questions/11599666/get-the-value-of-checked-checkbox
+Set Audio Current Time To Milliseconds Instead Of Seconds Via JS: https://stackoverflow.com/questions/55926854/can-you-set-the-currenttime-of-audio-in-milliseconds-instead-of-seconds-javasc/55926897
+Control Audio Speed Via JS: https://stackoverflow.com/questions/23618845/controlling-audio-speed-of-a-mp3-file
+Fade Out Audio Via JS: https://stackoverflow.com/questions/37762056/fade-out-of-a-mp3-song-using-javascript
+Vertically Center Text Via CSS: https://stackoverflow.com/questions/8865458/how-do-i-vertically-center-text-with-css

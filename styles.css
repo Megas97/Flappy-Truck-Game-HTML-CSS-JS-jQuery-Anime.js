@@ -1,0 +1,499 @@
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.fillScreen {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  background: gray;
+  color: white;
+  text-shadow: 1px 1px black;
+  top: 9px;
+  left: 200px;
+  bottom: 0px;
+  right: 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  z-index: 5;
+}
+
+#background {
+  position: absolute;
+  width: 2592px;
+  height: 400px;
+  left: 200px;
+  background: white url("Images/Landscape.jpg");
+  opacity: 0.7;
+  filter: brightness(50%);
+  border: 1px solid black;
+  user-select: none;
+  z-index: -3;
+}
+
+.sliding-background {
+  width: 2192px;
+  height: 400px;
+  background: white url("Images/Landscape.jpg") repeat-x;
+  opacity: 0.7;
+  animation: slideAnim 30s linear infinite;
+}
+
+@keyframes slideAnim {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-2192px, 0, 0);
+  }
+}
+
+.wheelie {
+  animation: wheelieAnim 1.5s linear 0s 1 normal forwards;
+}
+
+@keyframes wheelieAnim {
+  0% {
+    transform: translateX(164px) rotate(-20deg);
+  }
+
+  100% {
+    transform: translateX(164px) rotate(0deg);
+  }
+}
+
+#field {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 200px;
+  border: 1px solid black;
+  user-select: none;
+}
+
+#leftFiller {
+  position: absolute;
+  width: 198px;
+  height: 400px;
+  left: 0px;
+  background: black;
+  border: 1px solid black;
+}
+
+#topFiller {
+  position: absolute;
+  width: 10000px;
+  height: 6px;
+  left: 0px;
+  top: 0px;
+  background: black;
+  border: 1px solid black;
+}
+
+#rightFiller {
+  position: absolute;
+  width: 10000px;
+  height: 400px;
+  left: 600px;
+  background: black;
+  border: 1px solid black;
+}
+
+#bottomFiller {
+  position: absolute;
+  width: 1052px;
+  height: 6px;
+  left: 0px;
+  top: 410px;
+  background: black;
+  border: 1px solid black;
+}
+
+#remainingFiller {
+  position: absolute;
+  width: 10000px;
+  height: 10000px;
+  left: 0px;
+  top: 410px;
+  background: black;
+  border: 1px solid black;
+}
+
+#player {
+  position: relative;
+  width: 70px;
+  height: 50px;
+  left: 0px;
+  top: 350px;
+  z-index: -1;
+}
+
+#body {
+  position: relative;
+  width: 70px;
+  height: 30px;
+  background: transparent url("Images/Truck.png");
+  background-size: contain;
+}
+
+#headlights {
+  position: relative;
+  width: 12px;
+  height: 6px;
+  left: 64px;
+  top: 18px;
+  background: gold;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+#taillights {
+  position: relative;
+  width: 12px;
+  height: 6px;
+  left: -7px;
+  top: 12px;
+  background: red;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  transform: rotate(-90deg);
+  opacity: 0;
+}
+
+.turnLightsOn {
+  animation: lightsOnAnim 1s linear 0s 1 normal forwards;
+}
+
+.turnLightsOff {
+  animation: lightsOffAnim 1s linear 0s 1 normal forwards;
+}
+
+@keyframes lightsOnAnim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.7;
+  }
+}
+
+@keyframes lightsOffAnim {
+  from {
+    opacity: 0.7;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.wheels {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  left: 7px;
+  border-radius: 10px;
+  background: black url("Images/Wheels.png");
+  background-size: contain;
+  color: white;
+  text-align: center;
+}
+
+.front {
+  position: relative;
+  left: 47px;
+  top: -20px;
+}
+
+#scoreText {
+  position: relative;
+  left: 10px;
+  top: -40px;
+}
+
+#emptySpace {
+  margin-left: 40px;
+}
+
+#timeLeft {
+  position: relative;
+  font-size: 20px;
+  top: -20px;
+  text-align: center;
+}
+
+#gameOver {
+  position: relative;
+  font-size: 40px;
+  text-align: center;
+}
+
+#gameOverReason {
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+#startGameButton {
+  position: absolute;
+  left: 158px;
+  display: inline;
+}
+
+#soundToggleContainer {
+  position: absolute;
+  width: 82px;
+  height: 20px;
+  left: 158px;
+  top: 220px;
+  background: lightgray;
+  border: 1px solid black;
+  display: inline;
+}
+
+#soundToggleCheckbox {
+  position: relative;
+  left: 0px;
+}
+
+#soundToggleButton {
+  position: relative;
+  width: 60px;
+  height: 19px;
+  top: 1px;
+  background: lightgray;
+  float: right;
+}
+
+.obstacles {
+  position: absolute;
+  width: 52px;
+  background: blue url("Images/Brick.jpg");
+  float: left;
+  z-index: -1;
+}
+
+.bonuses {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(0, 255, 0, 0.2) url("Images/Bonus.png");
+  background-size: contain;
+  float: left;
+  z-index: -2;
+}
+
+.singleJump {
+  animation: singleJumpAnim 0.7s ease 0s 1 normal;
+}
+
+@keyframes singleJumpAnim {
+
+  0%,
+  100% {
+    top: 350px;
+  }
+
+  5%,
+  95% {
+    top: 337px;
+  }
+
+  10%,
+  90% {
+    top: 324px;
+  }
+
+  15%,
+  85% {
+    top: 311px;
+  }
+
+  20%,
+  80% {
+    top: 298px;
+  }
+
+  25%,
+  75% {
+    top: 284px;
+  }
+}
+
+.doubleJump {
+  animation: doubleJumpAnim 0.7s ease 0s 1 normal;
+}
+
+@keyframes doubleJumpAnim {
+
+  0% {
+    top: 284px;
+  }
+
+  25%,
+  75% {
+    top: 218px;
+  }
+
+  100% {
+    top: 350px;
+  }
+}
+
+.fall {
+  animation: fallAnim 2.1s ease 0s 1 normal;
+}
+
+@keyframes fallAnim {
+
+  0% {
+    top: 218px;
+  }
+
+  100% {
+    top: 350px;
+  }
+
+  25%,
+  75% {
+    top: 350px;
+  }
+}
+
+.rotate {
+  animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+svg {
+  position: absolute;
+  z-index: -1;
+}
+
+#newGameButton {
+  position: absolute;
+  left: 162px;
+  display: none;
+}
+
+.rain {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 200px;
+}
+
+.rain.back-row {
+  bottom: 0px;
+  opacity: 0.5;
+}
+
+.drop {
+  position: absolute;
+  width: 15px;
+  height: 120px;
+  bottom: 100%;
+  pointer-events: none;
+  animation: drop 0.5s linear infinite;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(0px);
+  }
+
+  75% {
+    transform: translateY(410px);
+  }
+
+  100% {
+    transform: translateY(410px);
+  }
+}
+
+.stem {
+  width: 1px;
+  height: 60%;
+  margin-left: 7px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
+  animation: stem 0.5s linear infinite;
+}
+
+@keyframes stem {
+  0% {
+    opacity: 1;
+  }
+
+  65% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.splat {
+  width: 15px;
+  height: 10px;
+  border-top: 2px dotted rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  opacity: 1;
+  transform: scale(0);
+  animation: splat 0.5s linear infinite;
+}
+
+@keyframes splat {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+
+  80% {
+    opacity: 1;
+    transform: scale(0);
+  }
+
+  90% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+#snow {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 200px;
+}

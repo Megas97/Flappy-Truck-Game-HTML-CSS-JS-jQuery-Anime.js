@@ -1,0 +1,84 @@
+<html>
+
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+	<link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div id="startupClickDiv" class="fillScreen">
+      Click anywhere to launch the game<br>
+      <br><br>
+      Objectives:<br>
+      Avoid all brick obstacles<br>
+      Take bonus time power-ups<br>
+      <br>
+      How to play:<br>
+      Click left mouse button to jump<br>
+      Double click left mouse button to double jump<br>
+      Move mouse left or right to move truck<br>
+      <br>
+      Challenges:<br>
+      Game becomes harder over time<br>
+      Weather conditions change over time<br>
+      <br>
+      Game over:<br>
+      Game ends when you hit an obstacle or time runs out<br>
+      <br><br>
+      Have fun :)<br>
+    </div>
+    <div id="background"></div>
+    <div class="rain front-row"></div>
+    <div class="rain back-row"></div>
+    <div id="snow"></div>
+    <div id="field">
+      <svg height="400" width="450" id="sunSVG">
+        <filter id="sunImage" x="0%" y="0%" width="100%" height="100%">
+          <feImage xlink:href="Images/Sun.png" />
+        </filter>
+        <circle id="sun" cx="430" cy="100" r="20" fill="orange" filter="url(#sunImage)" />
+        <animateTransform id="animateSun" attributeName="transform" type="translate" from="0" to="-470" dur="40s" repeatCount="1" begin="indefinite" />
+      </svg>
+      <svg height="400" width="450" id="moonSVG">
+        <filter id="moonImage" x="0%" y="0%" width="100%" height="100%">
+          <feImage xlink:href="Images/Moon.png" />
+        </filter>
+        <circle id="moon" cx="430" cy="100" r="20" fill="cyan" filter="url(#moonImage)" />
+        <animateTransform id="animateMoon" attributeName="transform" type="translate" from="0" to="-470" dur="20s" repeatCount="1" begin="indefinite" />
+      </svg>
+      <div id="player">
+        <div id="body">
+          <div id="headlights"></div>
+          <div id="taillights"></div>
+        </div>
+        <div class="wheels rear"></div>
+        <div class="wheels front"></div>
+      </div>
+      <div id="scoreText">
+        <span>LMB to (double) jump, avoid all obstacles!</span>
+        <span id="emptySpace"></span>
+        Score: <span id="score">0</span>
+      </div>
+      <div id="timeLeft">60</div>
+      <div id="gameOver">Flappy Truck</div>
+      <br>
+      <div id="gameOverReason">(◕‿◕)</div>
+      <div class="wrapper">
+        <br>
+        <button type="button" id="startGameButton">Start Game</button>
+        <div id="soundToggleContainer"><input type="checkbox" id="soundToggleCheckbox">
+          <div id="soundToggleButton">Sound</div>
+        </div>
+        <button type="button" id="newGameButton">New Game</button>
+      </div>
+    </div>
+    <div id="leftFiller"></div>
+    <div id="topFiller"></div>
+    <div id="rightFiller"></div>
+    <div id="bottomFiller"></div>
+	<div id="remainingFiller"></div>
+	<script src="script.js"></script>
+  </body>
+
+</html>
